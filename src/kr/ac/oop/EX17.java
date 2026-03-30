@@ -13,7 +13,17 @@ public class EX17 {
         locations[2]=new Location(3, "C",555.11, 666.22,"010-3333-1111","서울");
 
         for (int i = 0; i < locations.length; i++) {
-            System.out.println(locations[i]);
+            System.out.println(locations[i].toString());
+        }
+        // 향상된 for
+        for( Location loc : locations){
+            System.out.println(loc); // loc.toString()
         }
     }
 }
+/*
+   class = Model(역할) - 개발자가 만들수있는 모델(클래스)의 종류
+   1. DTO(Data Transfer Object) : Location, Student
+   2. DAO(Data Access Object) : DataBase를 연결하여 CRUD를 수행하는 객체
+   3. Utility(Helper) Object : MyHap
+ */
