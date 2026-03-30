@@ -18,7 +18,7 @@ public class EX19 {
         System.out.println(str.substring(2, 4)); // PL
         for (int i = 0; i < str.length(); i++){
             System.out.println(str.charAt(i));
-        }       
+        }
     }
  }
 
