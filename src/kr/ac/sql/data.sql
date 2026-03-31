@@ -37,4 +37,11 @@ select * from customer where cus_name like '%홍';
 select * from customer where cus_name like '홍%';
 select * from customer where cus_name like '%홍%';
 
--- Q. 
+-- update SQL : 수정(Update)
+-- Q. 홍길동의 고객의 전화번호(010-9999-9999), 이메일(sss@ac.kr) 수정하시오.
+update customer set cus_phone='010-9999-9999',cus_email='sss@ac.kr'
+where cus_id=2;
+
+-- delete SQL : 삭제(Delete)
+-- Q 홍길동 고객을 삭제하시오.
+delete from customer where cus_id=2;
