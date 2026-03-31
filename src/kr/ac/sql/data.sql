@@ -22,5 +22,19 @@ values('박매일','010-1111-1111','aaa@ac.kr');
 insert into customer(cus_name,cus_phone,cus_email)
 values('홍길동','010-2222-1111','bbb@ac.kr');
 
+-- Q. 고객의 이름,전화번호만 출력하세요.
+select cus_name, cus_phone from customer;
 
+-- Q. 이름을 기준으로 오름차순 정렬하여 출력하시오.
+select * from customer order by cus_name desc; -- desc
 
+-- Q. 전체 고객이 몆명인지 출력하시오.
+select count(*) as cnt from customer; -- 2
+
+-- Q. 이름에 홍으로 시작하는 고객을 모두 출력하시오.
+select * from customer where cus_name='홍길동';
+select * from customer where cus_name like '%홍';
+select * from customer where cus_name like '홍%';
+select * from customer where cus_name like '%홍%';
+
+-- Q. 
